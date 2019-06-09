@@ -1,0 +1,115 @@
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+.button {
+    outline: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.ads {
+    max-width: 1180px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.ads__title {
+    text-transform: capitalize;
+    text-align: center;
+    color: #45852D;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}
+
+.ads__list {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ads__item {
+    width: 32.1%;
+    max-width: 371px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    margin-bottom: 50px;
+}
+
+.card__info {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 17px;
+}
+
+.card__name {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 2px;
+}
+
+.card__address {
+    margin-bottom: 15px;
+}
+
+.card__price {
+    font-weight: bold;
+}
+
+.card__ownership {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.card__feature {
+    position: absolute;
+    display: block;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -52px;
+    right: 0;
+}
+
+.card__feature--green {
+    background-color: #006F79;
+    width: 134px;
+}
+
+.card__feature--orange {
+    background-color: #EC6608;
+    width: 204px;
+}
