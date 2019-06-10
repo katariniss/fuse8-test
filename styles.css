@@ -159,6 +159,10 @@ ul {
     margin-left: 10px;
 }
 
+.ads__button--hidden {
+    display: none;
+}
+
 .ads__item--hidden {
     display: none;
 }
