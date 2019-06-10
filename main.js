@@ -3,7 +3,9 @@
 
   const seeMoreButton = document.querySelector('.ads__button');
 
-  seeMoreButton.addEventListener('click', function () {
+  seeMoreButton.addEventListener('click', onSeeMoreClick);
+
+  function onSeeMoreClick() {
     const hiddenAds = document.querySelectorAll('.ads__item--hidden');
     const hiddenAdsArray = Array.from(hiddenAds);
 
@@ -18,5 +20,5 @@
     if (hiddenAdsArray.length <= NUMBER_OF_ADS_TO_SHOW) {
       seeMoreButton.classList.add('ads__button--hidden');
     }
-  });
+  }
 })();
