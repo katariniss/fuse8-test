@@ -1,14 +1,16 @@
 (function () {
-    var seeMoreButton = document.querySelector('.ads__button');
-    var advertisements = document.querySelectorAll('.ads__item');
-  
-    seeMoreButton.addEventListener('click', function () {
-      for (let i = 0; i < advertisements.length; i++) {
-        const currentAdvertisement = advertisements[i];
+  const seeMoreButton = document.querySelector('.ads__button');
 
-        if (currentAdvertisement.classList.contains('ads__item--hidden')) {
-          currentAdvertisement.classList.remove('ads__item--hidden');
-      }
-      }
-    });
-  })();
+  seeMoreButton.addEventListener('click', function () {
+    const hiddenAds = document.querySelectorAll('.ads__item--hidden');
+    const hiddenAdsArray = Array.from(hiddenAds);
+
+    const firstSixHiddenAds = hiddenAdsArray.slice(0, 6);
+
+    for (let i = 0; i < firstSixHiddenAds.length; i++) {
+      const hiddenAd = firstSixHiddenAds[i];
+
+      hiddenAd.classList.remove('ads__item--hidden');
+    }
+  });
+})();
