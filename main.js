@@ -7,7 +7,7 @@
 
   function onSeeMoreClick() {
     const hiddenAds = document.querySelectorAll('.ads__item--hidden');
-    const hiddenAdsArray = Array.from(hiddenAds);
+    const hiddenAdsArray = Array.prototype.slice.call(hiddenAds);
 
     const firstSixHiddenAds = hiddenAdsArray.slice(0, NUMBER_OF_ADS_TO_SHOW);
 
