@@ -112,7 +112,7 @@ ul {
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    margin-top: -51px;
+    margin-top: -52px;
     right: 0;
 }
 
@@ -143,6 +143,7 @@ ul {
     outline: none;
     margin: auto;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 .ads__button:hover,
