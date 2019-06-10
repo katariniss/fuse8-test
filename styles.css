@@ -50,15 +50,21 @@ ul {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .ads__item {
     width: 32.1%;
     max-width: 379px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: #F8F8F8;
     border: 1px solid #D8D8D8;
     margin-bottom: 50px;
@@ -130,7 +136,8 @@ ul {
     padding-left: 27px;
     padding-right: 26px;
     border: 1px solid #D8D8D8;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 25px;
     background-color: #fff;
     outline: none;
@@ -144,7 +151,10 @@ ul {
 
 @media (max-width: 768px) {
     .ads__list {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 379px;
         margin: 0 auto;
     }
