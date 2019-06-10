@@ -145,8 +145,21 @@ ul {
     margin-bottom: 50px;
 }
 
+.ads__button:hover,
+.ads__button:focus {
+    background-color: #e5e5e5;
+}
+
+.ads__button:active {
+    background-color: #D8D8D8;
+}
+
 .ads__button svg {
     margin-left: 10px;
+}
+
+.ads__item--hidden {
+    display: none;
 }
 
 @media (max-width: 768px) {
